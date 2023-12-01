@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Display Main Menu -->
+    <TextView
+        android:id="@+id/textMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="CSUMB Otter Library System"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <!-- Options for Create Account, Place Hold, Cancel Hold, and Manage System -->
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="250dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/textMainMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Create Account"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnPlaceHold"
+        android:layout_width="250dp"
+        android:layout_height="98dp"
+        android:layout_below="@id/btnCreateAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Place Hold"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCancelHold"
+        android:layout_width="250dp"
+        android:layout_height="101dp"
+        android:layout_below="@id/btnPlaceHold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Cancel Hold"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnManageSystem"
+        android:layout_width="250dp"
+        android:layout_height="109dp"
+        android:layout_below="@id/btnCancelHold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Manage System"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

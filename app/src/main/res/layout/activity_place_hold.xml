@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceHoldActivity">
+
+    <TextView
+        android:id="@+id/monthYearTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="December 2023"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pickupDayEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monthYearTextView"
+        android:layout_marginTop="16dp"
+        android:hint="Pickup Day"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/returnDayEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickupDayEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Return Day"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/showAvailableBooksButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/returnDayEditText"
+        android:layout_marginTop="92dp"
+        android:text="Show Available Books" />
+
+</RelativeLayout>

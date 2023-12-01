@@ -81,12 +81,10 @@ public class ConfirmationActivity extends AppCompatActivity {
         double totalAmount = feePerDay * (numberOfDays + 1);
 
         char[] availability = selectedBook.getAvailability();
-        int startIndex = pickupDate - 1; // Subtract 1 to match array index
-        int endIndex = returnDate - 1;   // Subtract 1 to match array index
-
-        for (int i = startIndex; i <= endIndex; i++) {
+        for (int i = pickupDate; i <= returnDate && i < availability.length; i++) {
             availability[i] = '-'; // Mark as unavailable
         }
+        
         selectedBook.setAvailability(availability);
         selectedBook.setCustomerUsername(customerUsername);
         bookRentalSystemDao.updateBookReservationStatus(selectedBook);
